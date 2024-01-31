@@ -4,7 +4,7 @@ import Contacts from "@/components/ContactsBlock.vue";
 import DoneDeals from "@/components/DoneDealsBlock.vue";
 import Services from "@/components/ServicesBlock.vue";
 import Showcase from "@/components/ShowcaseBlock.vue";
-import Testimonials from "@/components/TestimonialsBlock.vue";
+import Feedback from "@/components/TestimonialsBlock.vue";
 import Welcome from "@/components/WelcomeBlock.vue";
 import WholesaleInfo from "@/components/WholesaleInformationBlock.vue";
 
@@ -16,7 +16,7 @@ export default {
     DoneDeals,
     Services,
     Showcase,
-    Testimonials,
+    Feedback,
     Welcome,
     WholesaleInfo
   }
@@ -29,7 +29,7 @@ export default {
     <about-us/>
     <showcase/>
     <services/>
-    <testimonials/>
+    <feedback/>
     <done-deals/>
     <wholesale-info/>
     <contacts/>

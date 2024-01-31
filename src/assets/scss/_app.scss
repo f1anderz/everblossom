@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.highlight{
+.highlight {
   color: variables.$highlight-color;
+}
+
+::selection {
+  background-color: rgba(21, 12, 1, .1);
 }
