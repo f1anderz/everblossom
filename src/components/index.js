@@ -6,7 +6,8 @@ import Showcase from "@/components/ShowcaseBlock.vue";
 import Testimonials from "@/components/TestimonialsBlock.vue";
 import Welcome from "@/components/WelcomeBlock.vue";
 import WholesaleInformation from "@/components/WholesaleInformationBlock.vue";
+import Navigation from "@/components/WelcomeBlock/Navigation.vue";
 
 export default [
-    AboutUs, Contacts, DoneDeals, Services, Showcase, Testimonials, Welcome, WholesaleInformation
+    AboutUs, Contacts, DoneDeals, Services, Showcase, Testimonials, Welcome, WholesaleInformation, Navigation
 ];

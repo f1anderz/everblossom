@@ -15,6 +15,6 @@ export default {
 
 .about-us-block {
   height: 100vh;
-  background-color: style.$background-color;
+  background-color: style.$highlight-color;
 }
 </style>
