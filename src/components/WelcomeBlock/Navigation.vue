@@ -66,17 +66,27 @@ export default {
       flex-direction: row;
     }
 
-    @include style.breakpoint(l) {
-      display: flex;
-      flex-direction: row;
-    }
-
     @include style.breakpoint(m) {
       display: flex;
       flex-direction: row;
     }
 
+    @include style.breakpoint(l) {
+      display: flex;
+      flex-direction: row;
+    }
+
+    @include style.breakpoint(xl){
+      display: flex;
+      flex-direction: row;
+    }
+
     @include style.breakpoint(xxl) {
+      display: flex;
+      flex-direction: row;
+    }
+
+    @include style.breakpoint(xxxl){
       display: flex;
       flex-direction: row;
     }
@@ -181,7 +191,30 @@ export default {
       }
 
       @include style.breakpoint(xl) {
+        font-size: .9em;
+        padding: 0 1em;
 
+        &:after {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: 1.2em;
+          left: 100%;
+          background-color: style.$text-color;
+        }
+
+        &:last-of-type {
+          &:after {
+            content: none;
+          }
+        }
+
+        & a {
+          position: relative;
+          color: style.$text-color;
+          text-decoration: none;
+          overflow: hidden;
+        }
       }
 
       @include style.breakpoint(xxl) {
@@ -234,7 +267,52 @@ export default {
       }
 
       @include style.breakpoint(xxxl) {
+        font-size: 2.2em;
+        padding: 0 1.3em;
 
+        &:after {
+          content: '';
+          position: absolute;
+          width: 1px;
+          height: 1.2em;
+          left: 100%;
+          background-color: style.$text-color;
+        }
+
+        &:last-of-type {
+          &:after {
+            content: none;
+          }
+        }
+
+        & a {
+          position: relative;
+          color: style.$text-color;
+          text-decoration: none;
+          overflow: hidden;
+
+          &:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            transform: translate(-50%, -50%);
+            width: 0;
+            height: 1px;
+            background-color: style.$highlight-color;
+            transition: all 0.5s ease;
+          }
+
+          &:hover {
+            color: style.$highlight-color;
+
+            &:before {
+              width: 100%;
+              left: 0;
+              transform: translate(0, -50%);
+            }
+          }
+        }
       }
     }
   }

@@ -66,6 +66,7 @@ export default {
   }
 
   @include style.breakpoint(xl) {
+    gap: 28vh;
   }
 
   @include style.breakpoint(xxl) {
@@ -73,7 +74,7 @@ export default {
   }
 
   @include style.breakpoint(xxxl) {
-
+    gap: 25vh;
   }
 
   &-header {
@@ -99,9 +100,11 @@ export default {
     }
 
     @include style.breakpoint(l) {
+      padding: .1em .6em;
     }
 
     @include style.breakpoint(xl) {
+      padding: .1em .6em;
     }
 
     @include style.breakpoint(xxl) {
@@ -109,7 +112,7 @@ export default {
     }
 
     @include style.breakpoint(xxxl) {
-
+      padding: .5em 1em;
     }
 
     &-container {
@@ -134,16 +137,15 @@ export default {
       }
 
       @include style.breakpoint(xl) {
-
+        gap: .3em;
       }
 
       @include style.breakpoint(xxl) {
         gap: .5em;
-
       }
 
       @include style.breakpoint(xxxl) {
-
+        gap: .5em;
       }
 
       &-icon {
@@ -172,7 +174,8 @@ export default {
           }
 
           @include style.breakpoint(xl) {
-
+            width: 3.8em;
+            height: 3.8em;
           }
 
           @include style.breakpoint(xxl) {
@@ -181,7 +184,8 @@ export default {
           }
 
           @include style.breakpoint(xxxl) {
-
+            width: 8em;
+            height: 8em;
           }
         }
       }
@@ -205,7 +209,7 @@ export default {
         }
 
         @include style.breakpoint(xl) {
-
+          font-size: 1.7em;
         }
 
         @include style.breakpoint(xxl) {
@@ -213,7 +217,7 @@ export default {
         }
 
         @include style.breakpoint(xxxl) {
-
+          font-size: 4em;
         }
 
         & a {
@@ -255,7 +259,8 @@ export default {
     }
 
     @include style.breakpoint(xl) {
-
+      width: 50%;
+      margin-left: 5%;
     }
 
     @include style.breakpoint(xxl) {
@@ -266,7 +271,10 @@ export default {
     }
 
     @include style.breakpoint(xxxl) {
-
+      width: 45%;
+      margin-left: 10%;
+      padding: 2.5em;
+      gap: 2em;
     }
 
     &-slogan {
@@ -288,7 +296,7 @@ export default {
       }
 
       @include style.breakpoint(xl) {
-
+        font-size: 1.9em;
       }
 
       @include style.breakpoint(xxl) {
@@ -296,7 +304,7 @@ export default {
       }
 
       @include style.breakpoint(xxxl) {
-
+        font-size: 5em;
       }
     }
 
@@ -319,6 +327,7 @@ export default {
       }
 
       @include style.breakpoint(xl) {
+        font-size: 1.15em;
       }
 
       @include style.breakpoint(xxl) {
@@ -326,7 +335,7 @@ export default {
       }
 
       @include style.breakpoint(xxxl) {
-
+        font-size: 3em;
       }
     }
 
@@ -409,29 +418,57 @@ export default {
       }
 
       @include style.breakpoint(xl) {
-
-      }
-
-      @include style.breakpoint(xxl) {
-        width: 25em;
-        height: 25em;
-        top: 40%;
-        left: 150%;
+        width: 20em;
+        height: 20em;
+        top: 50%;
+        left: 135%;
 
         &:first-of-type {
           z-index: 3;
-          top: 10%;
-          left: 110%;
+          top: 5%;
+          left: 105%;
         }
 
         &:last-of-type {
-          top: -30%;
-          left: 140%;
+          top: -23%;
+          left: 131%;
         }
       }
+    }
 
-      @include style.breakpoint(xxxl) {
+    @include style.breakpoint(xxl) {
+      width: 25em;
+      height: 25em;
+      top: 40%;
+      left: 150%;
 
+      &:first-of-type {
+        z-index: 3;
+        top: 10%;
+        left: 110%;
+      }
+
+      &:last-of-type {
+        top: -30%;
+        left: 140%;
+      }
+    }
+
+    @include style.breakpoint(xxxl) {
+      width: 50em;
+      height: 50em;
+      top: 40%;
+      left: 135%;
+
+      &:first-of-type {
+        z-index: 3;
+        top: 18%;
+        left: 105%;
+      }
+
+      &:last-of-type {
+        top: -10%;
+        left: 130%;
       }
     }
   }
@@ -457,19 +494,22 @@ export default {
     }
 
     @include style.breakpoint(l) {
-
+      height: 8em;
     }
 
     @include style.breakpoint(xl) {
+      height: 9em;
     }
 
     @include style.breakpoint(xxl) {
-
+      height: 13em;
     }
 
     @include style.breakpoint(xxxl) {
-
+      transform: scaleX(2.5);
+      height: 20em;
     }
   }
+
 }
 </style>
