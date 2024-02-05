@@ -434,41 +434,41 @@ export default {
           left: 131%;
         }
       }
-    }
 
-    @include style.breakpoint(xxl) {
-      width: 25em;
-      height: 25em;
-      top: 40%;
-      left: 150%;
+      @include style.breakpoint(xxl) {
+        width: 25em;
+        height: 25em;
+        top: 40%;
+        left: 150%;
 
-      &:first-of-type {
-        z-index: 3;
-        top: 10%;
-        left: 110%;
+        &:first-of-type {
+          z-index: 3;
+          top: 10%;
+          left: 110%;
+        }
+
+        &:last-of-type {
+          top: -30%;
+          left: 140%;
+        }
       }
 
-      &:last-of-type {
-        top: -30%;
-        left: 140%;
-      }
-    }
+      @include style.breakpoint(xxxl) {
+        width: 50em;
+        height: 50em;
+        top: 40%;
+        left: 135%;
 
-    @include style.breakpoint(xxxl) {
-      width: 50em;
-      height: 50em;
-      top: 40%;
-      left: 135%;
+        &:first-of-type {
+          z-index: 3;
+          top: 18%;
+          left: 105%;
+        }
 
-      &:first-of-type {
-        z-index: 3;
-        top: 18%;
-        left: 105%;
-      }
-
-      &:last-of-type {
-        top: -10%;
-        left: 130%;
+        &:last-of-type {
+          top: -10%;
+          left: 130%;
+        }
       }
     }
   }
@@ -510,6 +510,5 @@ export default {
       height: 20em;
     }
   }
-
 }
 </style>
