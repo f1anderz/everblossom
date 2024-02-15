@@ -9,10 +9,10 @@ export default {
 
 <template>
   <div class="welcome-block" id="welcome">
-    <img class="welcome-block-wave" src="@/assets/img/wave.svg" alt="wave">
+    <img class="welcome-block-wave" src="../assets/img/wave.svg" alt="wave">
     <div class="welcome-block-header">
       <div class="welcome-block-header-container">
-        <div class="welcome-block-header-container-icon"><img src="@/assets/img/favicon.webp" alt="Icon"></div>
+        <div class="welcome-block-header-container-icon"><img src="../assets/img/favicon.webp" alt="Icon"></div>
         <div class="welcome-block-header-container-title"><a href="#welcome">everblossom</a></div>
       </div>
       <navigation/>
@@ -29,10 +29,10 @@ export default {
         <span class="highlight">everblossom</span> — where beauty blossoms, and elegance flourishes.
       </div>
       <img class="welcome-block-main-image"
-           src="@/assets/img/gardening-background.webp" alt="Plants">
-      <img class="welcome-block-main-image" src="@/assets/img/seedlings-dark.webp"
+           src="../assets/img/gardening-background.webp" alt="Plants">
+      <img class="welcome-block-main-image" src="../assets/img/seedlings-dark.webp"
            alt="Plants">
-      <img class="welcome-block-main-image" src="@/assets/img/closeup-plant.webp"
+      <img class="welcome-block-main-image" src="../assets/img/closeup-plant.webp"
            alt="Plants">
     </div>
   </div>

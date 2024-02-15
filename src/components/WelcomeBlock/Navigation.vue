@@ -13,7 +13,7 @@ export default {
   <div class="navigation">
     <div class="navigation-links" :class="{shown: menuActive}">
       <div class="navigation-links-link"><a href="#about-us">About Us</a></div>
-      <div class="navigation-links-link"><a href="#">Plants</a></div>
+      <div class="navigation-links-link"><a href="#showcase">Plants</a></div>
       <div class="navigation-links-link"><a href="#">Services</a></div>
       <div class="navigation-links-link"><a href="#">Feedback</a></div>
       <div class="navigation-links-link"><a href="#">Our works</a></div>
@@ -35,13 +35,13 @@ export default {
   flex-direction: row;
 
   &-menu {
-    padding-right: .4em;
-    padding-top: .4em;
+    padding-right: .4rem;
+    padding-top: .4rem;
 
     & img {
       @include style.breakpoint(xs) {
-        width: 1.5em;
-        height: 1.5em;
+        width: 1.5rem;
+        height: 1.5rem;
         transition: transform .3s ease;
       }
     }
@@ -52,11 +52,11 @@ export default {
     @include style.breakpoint(xs) {
       position: absolute;
       right: 0;
-      width: 10em;
+      width: 10rem;
       display: flex;
       flex-direction: column;
-      border-radius: 1em;
-      padding-top: 1.5em;
+      border-radius: 1rem;
+      padding-top: 1.5rem;
       transform: translateX(100%);
       transition: transform .3s ease;
     }
@@ -76,7 +76,7 @@ export default {
       flex-direction: row;
     }
 
-    @include style.breakpoint(xl){
+    @include style.breakpoint(xl) {
       display: flex;
       flex-direction: row;
     }
@@ -86,7 +86,7 @@ export default {
       flex-direction: row;
     }
 
-    @include style.breakpoint(xxxl){
+    @include style.breakpoint(xxxl) {
       display: flex;
       flex-direction: row;
     }
@@ -95,8 +95,8 @@ export default {
       position: relative;
 
       @include style.breakpoint(xs) {
-        font-size: 1.2em;
-        padding: .5em 1.3em;
+        font-size: 1.2rem;
+        padding: .5em 1.3rem;
 
         &:last-child {
           border: none;
@@ -110,14 +110,14 @@ export default {
       }
 
       @include style.breakpoint(s) {
-        font-size: .8em;
-        padding: 0 .5em;
+        font-size: .8rem;
+        padding: 0 .5rem;
 
         &:after {
           content: '';
           position: absolute;
           width: 1px;
-          height: 1.2em;
+          height: 1.2rem;
           left: 100%;
           background-color: style.$text-color;
         }
@@ -137,14 +137,14 @@ export default {
       }
 
       @include style.breakpoint(m) {
-        font-size: .8em;
-        padding: 0 .4em;
+        font-size: .8rem;
+        padding: 0 .4rem;
 
         &:after {
           content: '';
           position: absolute;
           width: 1px;
-          height: 1.2em;
+          height: 1.2rem;
           left: 100%;
           background-color: style.$text-color;
         }
@@ -164,14 +164,14 @@ export default {
       }
 
       @include style.breakpoint(l) {
-        font-size: .9em;
-        padding: 0 .6em;
+        font-size: .9rem;
+        padding: 0 .6rem;
 
         &:after {
           content: '';
           position: absolute;
           width: 1px;
-          height: 1.2em;
+          height: 1.2rem;
           left: 100%;
           background-color: style.$text-color;
         }
@@ -191,14 +191,14 @@ export default {
       }
 
       @include style.breakpoint(xl) {
-        font-size: .9em;
-        padding: 0 1em;
+        font-size: .9rem;
+        padding: 0 1rem;
 
         &:after {
           content: '';
           position: absolute;
           width: 1px;
-          height: 1.2em;
+          height: 1.2rem;
           left: 100%;
           background-color: style.$text-color;
         }
@@ -218,14 +218,14 @@ export default {
       }
 
       @include style.breakpoint(xxl) {
-        font-size: 1.2em;
-        padding: 0 1.3em;
+        font-size: 1.2rem;
+        padding: 0 1.3rem;
 
         &:after {
           content: '';
           position: absolute;
           width: 1px;
-          height: 1.2em;
+          height: 1.2rem;
           left: 100%;
           background-color: style.$text-color;
         }
@@ -267,14 +267,14 @@ export default {
       }
 
       @include style.breakpoint(xxxl) {
-        font-size: 2.2em;
-        padding: 0 1.3em;
+        font-size: 2.2rem;
+        padding: 0 1.3rem;
 
         &:after {
           content: '';
           position: absolute;
           width: 1px;
-          height: 1.2em;
+          height: 1.2rem;
           left: 100%;
           background-color: style.$text-color;
         }
