@@ -274,7 +274,7 @@ export default {
           content: '';
           position: absolute;
           width: 1px;
-          height: 1.2rem;
+          height: 2.4rem;
           left: 100%;
           background-color: style.$text-color;
         }
